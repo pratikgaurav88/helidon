@@ -1,0 +1,14 @@
+security: 
+  jersey: 
+    enabled: true 
+  config.require-encryption: false 
+  providers: 
+  - http-basic-auth: 
+      realm: "helidon"
+      users: 
+        - login: pratik
+          password: Welcome123#
+          roles: ["admin"]
+        - login: gaurav
+          password: Welcome123#
+          roles: ["users"]
